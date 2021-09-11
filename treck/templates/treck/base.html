@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  {% load static%}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    {% block title%}
+    <title>Discover Trekking</title>
+    {% endblock title%}
+    <style>
+.badge-success{
+  color: white;
+  background-color: #28A745;
+}
+
+.headsocial a .fa-facebook {
+    background-color:#43609c ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-twitter {
+    background-color:#1DA1F2 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-google-plus {
+    background-color:#D34836 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-linkedin {
+    background-color:#007BB6 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-tripadvisor {
+    background-color:#01B089 ;
+    color:#fff;
+
+}
+.headsocial a .fa-youtube {
+    background-color:#ff3737 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+
+.fa-tripadvisor:before {
+    content: "\f262";
+}
+h1 span{
+  color: #007BB6;
+  font-size: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+}
+
+.title-border:after {
+    background: transparent url(	https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/title2-icon-1.png) no-repeat scroll 0 0;
+    bottom: 16px;
+    content: "";
+}
+.title-border:after {
+    background: transparent url(../images/title-icon-2.png) no-repeat scroll 0 0;
+    bottom: 11px;
+    content: "";
+    height: 22px;
+    left: 50%;
+    margin-left: -34.5px;
+    position: absolute;
+    width: 67px;
+}
+.bhutan:before {
+    background: url(https://www.discovertreks.com/wp-content/uploads/2017/09/bhutan.jpg) no-repeat 0 0;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+        <!-- header -->
+        <header class="top bg-light">
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-2">
+            <marquee onmouseover="this.stop();" onmouseout="this.start();"> <i class="fa fa-star" aria-hidden="true"></i> Everyday departure Guarantee</marquee>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsticker">
+                <ul class="newsticker-list" style="top: 3px;">
+                <li class="newsticker-item current">
+                <i class="fa fa-anchor"></i> Around Dolpo Trek &nbsp; &nbsp; <a  href="https://www.discovertreks.com/around-dolpo-trek/" class="badge badge-success ts">Join Now</a>
+                </li><li class="newsticker-item">
+                <i class="fa fa-anchor"></i> Around Annapurna &nbsp; &nbsp; <a href="https://www.discovertreks.com/around-annapurna/" class="badge badge-success ts">Join Now</a>
+                </li><li class="newsticker-item">
+                <i class="fa fa-anchor"></i> Gorkha -Ganesh Himal Trek &nbsp; &nbsp; <a href="https://www.discovertreks.com/gorkha-ganesh-himal-trek/" class="badge badge-success ts">Join Now</a>
+                </li>
+                <li class="newsticker-item">
+                <i class="fa fa-anchor"></i> Kanchanjunga Trek &nbsp; &nbsp; <a href="https://www.discovertreks.com/kanchanjunga-trek/" class="badge badge-success ts">Join Now</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+            <a href="tel:+977-9851020546" class="badge badge-success ts">24x7 Call Us +977-9851020546</a>
+            </div>
+            <div class="col-lg-3 powered headsocial">
+            <a href="https://www.facebook.com/Discover-Himalayan-Treks-1375583689379784/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/discoverbound" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.tripadvisor.com/ShowTopic-g424945-i19001-k6549322-Trip_Report_Lower_Dolpo_Trek_with_Discover_Himalayan_Treks-Dolpo_Karnali_Zone_Mid_Western_.html" target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            </div>
+            </div>
+            </header>
+      
+      
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <img class="d-block h-10 " src="{% static 'logof.png' %}">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav mr-3">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">
+                            <i class="fa fa-home fa-1x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'profile' %}">Company Profile</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'nepal' %}" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nepal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'gnepal' %}">Nepal At Glace</a>
+                            <a class="dropdown-item" href="{% url 'trecknep' %}">Trekkings in Nepal</a>
+                            <a class="dropdown-item" href="{% url 'safari' %}">Wildlife Jungle Safari</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bhutan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'gbhutan' %}">Bhutan At Glance</a>
+                            <a class="dropdown-item" href="#">Bhutan The Dragon Kingdom</a>
+      
+                        </div>
+                    </li>
+      
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          India
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">India At Glance</a>
+                      </div>
+                  </li>
+      
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tibet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tibet At Glance</a>
+                            <a class="dropdown-item" href="#">Tibet General Info</a>
+                        </div>
+                    </li>
+      
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Accommodation
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Hospitals In Nepal</a>
+                          <a class="dropdown-item" href="#">Hotels in Tibet/Lhasa</a>
+                      </div>
+                  </li>
+      
+                    <li class="nav-item">
+                        <a class="nav-link" href="/testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/blog">Blog</a>
+                  </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+      
+            </div>
+        </nav>
+      {% block content %}
+      {% endblock %}
+
+      {% block contact %}
+      {% endblock %}
+
+      {% block testimonial %}
+      {% endblock %}
+
+      {% block blog %}
+      {% endblock %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

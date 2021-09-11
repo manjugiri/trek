@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="{% static 'style.css' %}">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Discover Treking</title>
+
+
+  </head>
+  <style>
+    .button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    margin:auto;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    line-height: 10px;
+}
+
+.badge-success{
+  color: white;
+  background-color: #28A745;
+}
+
+.headsocial a .fa-facebook {
+    background-color:#43609c ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-twitter {
+    background-color:#1DA1F2 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-google-plus {
+    background-color:#D34836 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-linkedin {
+    background-color:#007BB6 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa-tripadvisor {
+    background-color:#01B089 ;
+    color:#fff;
+
+}
+.headsocial a .fa-youtube {
+    background-color:#ff3737 ;
+    color:#fff;
+
+}
+
+.headsocial a .fa {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+
+.fa-tripadvisor:before {
+    content: "\f262";
+}
+
+
+/* nav */
+
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+
+  </style>
+
+  <body>
+    <header class="top">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-2">
+      <marquee onmouseover="this.stop();" onmouseout="this.start();"> <i class="fa fa-star" aria-hidden="true"></i> Everyday departure Guarantee</marquee>
+      </div>
+      <div class="col-lg-4">
+        <div class="newsticker">
+          <ul class="newsticker-list" style="top: 3px;">
+          <li class="newsticker-item current">
+          <i class="fa fa-anchor"></i> Around Dolpo Trek &nbsp; &nbsp; <a  href="https://www.discovertreks.com/around-dolpo-trek/" class="badge badge-success ts">Join Now</a>
+          </li><li class="newsticker-item">
+          <i class="fa fa-anchor"></i> Around Annapurna &nbsp; &nbsp; <a href="https://www.discovertreks.com/around-annapurna/" class="badge badge-success ts">Join Now</a>
+          </li><li class="newsticker-item">
+          <i class="fa fa-anchor"></i> Gorkha -Ganesh Himal Trek &nbsp; &nbsp; <a href="https://www.discovertreks.com/gorkha-ganesh-himal-trek/" class="badge badge-success ts">Join Now</a>
+          </li>
+          <li class="newsticker-item">
+          <i class="fa fa-anchor"></i> Kanchanjunga Trek &nbsp; &nbsp; <a href="https://www.discovertreks.com/kanchanjunga-trek/" class="badge badge-success ts">Join Now</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+      <a href="tel:+977-9851020546" class="badge badge-success ts">24x7 Call Us +977-9851020546</a>
+      </div>
+      <div class="col-lg-3 powered headsocial">
+      <a href="https://www.facebook.com/Discover-Himalayan-Treks-1375583689379784/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/discoverbound" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://www.tripadvisor.com/ShowTopic-g424945-i19001-k6549322-Trip_Report_Lower_Dolpo_Trek_with_Discover_Himalayan_Treks-Dolpo_Karnali_Zone_Mid_Western_.html" target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+      <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+      </div>
+      </div>
+      </div>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <div class="container-fluid"> -->
+        <img class="d-block h-10 " src="{% static 'logof.png' %}">
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="main_nav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active "> <a class="nav-link " href="#">Home </a> </li>
+            <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">  Treeview menu  </a>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                  <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                    <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                      <ul class="submenu dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                        <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                    <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar-collapse.// -->
+        <!-- </div> -->
+        <!-- container-fluid.// -->
+        </nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'Mustang.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src=".{% static 'langtang.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'nepal.jpeg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<div class="service-about-area"> 
+  <div class="container">
+    <div class="row" >
+    <div class="col-md-6 col-sm-12" >
+
+      
+
+        <div class="single-service-two">
+          <ul id="menu-welcome-sidebar-menu" class="row">
+            <li id="menu-item-486" class="col-4 service-item sightseeing menu-item menu-item-type-taxonomy menu-item-object-category menu-item-486" ><a href="">Sightseeing Tour</a></li>
+            <li id="menu-item-487" class="col-4 service-item cultural menu-item menu-item-type-post_type menu-item-object-page menu-item-487" ><a href="">Cultural Study</a></li>
+            <li id="menu-item-488" class="col-4 service-item riverrafting menu-item menu-item-type-taxonomy menu-item-object-category menu-item-488" ><a href="">River Rafting</a></li>
+            <li id="menu-item-498" class="col-4 service-item shoppingent menu-item menu-item-type-post_type menu-item-object-page menu-item-498" ><a href="">Shopping/Entertainment</a></li>
+            <li id="menu-item-499" class="col-4 service-item wildlifesafari menu-item menu-item-type-taxonomy menu-item-object-category menu-item-499" ><a href="">Wildlife Jungle Safari</a></li>
+            <li id="menu-item-500" class="col-4 service-item adventureact menu-item menu-item-type-taxonomy menu-item-object-category menu-item-500" ><a href="">Adventure Activities</a></li>
+          </ul>
+      </div> 
+    </div>
+    <div class="col-md-6 col-sm-12 welcomepart">
+        <div class="about-container section-padding">
+          <div class="section-title">
+            <div class="title-border">
+              <h1>Welcome to <br> <span> <strong> Discover Himalayan Treks</strong></span></h1>
+            </div>
+          </div>
+              <div class="about-text">
+                <h1>Experts will help you</h1>
+                <p>One visit to the exotic country of Nepal is never enough. "Namaste" a greeting so warm keeps calling you back. Venture into the wild at Royal Chitwan National Park, water raft and canoe on the numerous fine rivers and climb...</p>
+                  <div class="clearfix text-center">
+                    <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/" class="btn btn-primary">View All Trekking</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row">
+  {% for i in ok %}
+  <div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+      <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="{{i.image.url}}">
+        <p class="card-text"> {{ i.name }}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+          </div>
+          <small class="text-muted">{{ i.altitude }}</small>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="clearfix text-center">
+  <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/" class="btn btn-primary">View All Trekking</a>
+  </div>
+
+  
+
+
+
+
+
+
+
+  <div class="best-sell-three destinations"> 
+    <div class="opabgthis section-padding " style="background-color: black; color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title title-three text-center">
+              <div class="title-border">
+                <h1>Outbound <span>Destination</span></h1>
+              </div>
+            <p>Not sure what you’re looking for and need a little inspiration? We can help. Check out our handpicked <br>lists of topical trips you can take right now.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 best-sell-slider">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="hover-effect">
+                  <div class="box-hover">
+                    <a href="https://www.discovertreks.com/category/destinations/bhutan/" rel="bookmark" style="background-image: url('{% static 'bhutan.jpg'%}');">
+                    <span>Bhutan</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="hover-effect">
+                  <div class="box-hover">
+                    <a href="https://www.discovertreks.com/category/destinations/india/" rel="bookmark" style="background-image: url('https://www.discovertreks.com/wp-content/uploads/2017/09/india.jpg');">
+                    <span>India</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="hover-effect">
+                  <div class="box-hover">
+                    <a href="https://www.discovertreks.com/category/destinations/nepal/" rel="bookmark" style="background-image: url('https://www.discovertreks.com/wp-content/uploads/2017/09/nepal.jpeg');">
+                    <span>Nepal</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="hover-effect">
+                  <div class="box-hover">
+                    <a href="https://www.discovertreks.com/category/destinations/tibet/" rel="bookmark" style="background-image: url(https://www.discovertreks.com/wp-content/uploads/2017/09/tibet.jpg);">
+                    <span>Tibet</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm">
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/"><img src="https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/15.jpg" alt="Trekking in Nepal" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- blog -->
+
+
+  <div class="best-sell-area blog-area section-padding blog-three-area">
+    <div class="container">
+    <div class="section-title title-three text-center">
+    <div class="title-border">
+    <h1>Latest <span>Blog Posts</span></h1>
+    </div>
+    </div>
+    <div class="row blog-carousel">
+    <div class="col-lg-6">
+    <div class="single-blog hover-effect">
+    <div class="row">
+    <div class="col-md-6 col-sm-6">
+    <div class="blog-image box-hover">
+    <a href="https://www.discovertreks.com/resilience-in-visitor-arrivals/" title="Resilience in Visitor Arrivals" style="background-image: url(https://www.discovertreks.com/wp-content/uploads/2017/09/Resilience-in-Visitor-Arrivals-discover-himalayan-treks-500x500.jpg) !important;">
+    </a>
+    <div class="date-time">
+    <span class="date">10</span>
+    <span class="month">Jun</span>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-sm-6 margin-left">
+    <div class="blog-text">
+    <h4><a href="https://www.discovertreks.com/resilience-in-visitor-arrivals/" title="Resilience in Visitor Arrivals">Resilience in Visitor Arrivals</a></h4>
+    <p>The month of May 2013 saw resilience in visitor arrivals after decline in the month of March and April, 2013. The figures released by Immigration Office, Tribhuvan International Airport (TIA) reveal that visitor arrivals in the month of May 2013,...</p>
+    <a href="https://www.discovertreks.com/resilience-in-visitor-arrivals/" title="Resilience in Visitor Arrivals" class="button-one">Learn More</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-6">
+    <div class="single-blog hover-effect">
+    <div class="row">
+    <div class="col-md-6 col-sm-6">
+    <div class="blog-image box-hover">
+    <a href="https://www.discovertreks.com/situation-update/" title="Situation Update" style="background-image: url(https://www.discovertreks.com/wp-content/uploads/2017/09/sitution-update-discover-himalayan-treks-500x500.jpg) !important;">
+    </a>
+    <div class="date-time">
+    <span class="date">3</span>
+    <span class="month">May</span>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-sm-6 margin-left">
+    <div class="blog-text">
+    <h4><a href="https://www.discovertreks.com/situation-update/" title="Situation Update">Situation Update</a></h4>
+    <p>On April 27, 2013, a heated argument took place between three Sherpas who were fixing the top for Mt. Everest and three European climbers Jonathan Griffith(UK), Ueli Steck(Switzerland) and Simone Moro(Italy) in the Camp II over asking them not to...</p>
+    <a href="https://www.discovertreks.com/situation-update/" title="Situation Update" class="button-one">Learn More</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="clearfix text-center">
+    <br>
+    <a href="https://www.discovertreks.com/category/blog" class="btn btn-primary">View All Blog Posts</a>
+    </div>
+    </div>
+    </div>
+ 
+
+
+    <!-- contact 
+     -->
+
+
+
+     <div class="container contact-page section-padding">
+      <div class="row">
+      <div class="col-lg-8" style="background-color:#2753ad">
+      <div class="footer-widget-list">
+      <h4>Contact Form</h4>
+      <p>If you have any suggestion or messages then please fill the form below and submit to us. We'll get back to you asap!</p>
+      <hr>
+      <div role="form" class="wpcf7" id="wpcf7-f316-o1" lang="en-US" dir="ltr">
+      <div class="screen-reader-response"></div>
+      <form action="/contact-us/#wpcf7-f316-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+      <div style="display: none;">
+      <input type="hidden" name="_wpcf7" value="316">
+      <input type="hidden" name="_wpcf7_version" value="5.1.3">
+      <input type="hidden" name="_wpcf7_locale" value="en_US">
+      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f316-o1">
+      <input type="hidden" name="_wpcf7_container_post" value="0">
+      </div>
+      <div class="row">
+      <div class="form-group col-lg-6"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Your Name"></span></div>
+      <div class="form-group col-lg-6"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Email Address"></span></div>
+      </div>
+      <div class="form-group"><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Subject"></span></div>
+      <div class="form-group"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span></div>
+      <div class="form-group">[recaptcha]</div>
+      <div class="form-group"><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn btn-primary"><span class="ajax-loader"></span></div>
+      <div class="wpcf7-response-output wpcf7-display-none"></div></form></div> </div>
+      </div>
+      <div class="col-lg-4" style="background-color:#2753ad">
+      <div class="footer-widget-list" style="color:white" >
+      <h4>Nepal Contact</h4>
+      <ul>
+      <li class="icon send">G.P.O Box: 10203, Thamel Mall, Kathmandu, Nepal</li>
+      <li class="icon envelope">trekhimalaya@mail.com.np</li>
+      <li class="icon phone">+977-1-14258975, 4258976</li>
+      <li class="icon fax">977-1-4249981</li>
+      </ul>
+      </div>
+      
+      <div class="footer-widget-list" style="color:white">
+      <h4>Austria Contact</h4>
+      <ul>
+      <li class="icon user-o">Andreas</li>
+      <li class="icon send">Unterschwendt 1
+      6385 Schwendt/Kössen
+      UID:ATU 57573519</li>
+      <li class="icon mobile">+43 664 2560256</li>
+      <li class="icon envelope">info@sportundnatur.com</li>
+      <li class="icon desktop">www.sportundnatur.com</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+      <!-- blig:  -->
+
+      <aside class="col-lg-3">
+        <div id="sidebar" class="sticky-top sidebarpage">
+          <div id="accordion" role="tablist">
+          <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+          <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+          Trekking region in Nepal
+          </a>
+          </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style="">
+          <div class="card-body">
+          <ul class="page-sidebar">
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/annapurna-region/" rel="bookmark">
+          Annapurna Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/dolpo-region/" rel="bookmark">
+          Dolpo Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/everest-khumbu-region/" rel="bookmark">
+          Everest Khumbu Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/gorkha-ganesh-himal/" rel="bookmark">
+          Gorkha - Ganesh Himal </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/kanchenjunga-region/" rel="bookmark">
+          Kanchenjunga Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/langtang-region/" rel="bookmark">
+          Langtang Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/mustang-region/" rel="bookmark">
+          Mustang Region </a>
+          </li>
+          <li>
+          <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/pokhara-region/" rel="bookmark">
+          Pokhara Region </a>
+          </li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </aside>
+
+
+
+
+
+
+      <!-- homepage  -->
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

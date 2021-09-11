@@ -1,0 +1,165 @@
+{% extends 'treck/base.html' %}
+{% load static %}
+{% block content %}
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static 'Mustang.jpg' %}" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'langtang.jpg' %}" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'nepal.jpeg' %}" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="row bg-light">
+    <div class="col-md-6 ">
+        <img src="{% static '7.png' %}" height="470px">
+    </div>
+    <div class="col-md-6">
+        <div class="section-title">
+            <div class="title-border text-center mt-4">
+              <h1 class="text-center font-weight-light" style="color: black;"> Welcome To<span style="color:#2B59BC;"> Discover Himalayan Treks</span></h1>
+            </div>
+            <div class=" about-text">
+                <h4 class="text-center mt-3 font-weight-light"  >Experts will help you</h4>
+                <p class="text-center mt-4">One visit to the exotic country of Nepal is never enough.
+                    "Namaste" a greeting so
+                    warm keeps calling you back. Venture
+                    into the wild at Royal Chitwan National Park, water raft and canoe on the numerous
+                    fine rivers and climb...</p>
+                    <div class="clearfix text-center">
+                      <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/" class="btn btn-primary">Why discover himalyan treks</a>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+  
+  <br>
+  <br>
+  <br>
+  
+
+<div class="container bg-light">
+  <div class="section-title title-three text-center">
+    <div class="title-border">
+      <h1 class="text-center font-weight-light" style="color: black;"> Popular<span style="color:#2B59BC;"> Trekking Packages</span></h1>
+    </div>
+    </div>
+    <hr>
+    <br>
+  <div class="row">
+    {% for i in ok %}
+    <div class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="{{i.image.url}}">
+          <p class="card-text"> {{ i.name }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="{% url 'bhutan1' i.id %}" class="btn btn-sm btn-outline-secondary mb-2 ml-2">View
+                  Detail</a>        
+          </div>
+            <small class="text-muted">{{ i.altitude }}</small>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div class="clearfix text-center">
+    <a href="https://www.discovertreks.com/category/destinations/nepal/trekking-in-nepal/" class="btn btn-primary">View All Trekking</a>
+    </div>
+
+</div>
+<br>
+
+<div class="destination">
+  <div class="main section" style="background-color: black; color: white;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title text-center">
+            <div class="title-border">
+              <h1>Outbound <span>Destination</span></h1>
+            </div>
+            <p>Not sure what you’re looking for and need a little inspiration? We can help. Check out our handpicked <br>lists of topical trips you can take right now.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 mt-4">
+              <div class="hover-effect">
+              <div class="box-hover">
+                  <a href="" class="" >
+                      <img src="{% static 'bhutan.jpg' %}" height="215px" width="250px">
+                  </a>
+              </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="col-md-6 mt-4">
+              <div class="hover-effect">
+              <div class="box-hover">
+                  <a href="" >
+                      <img src="{% static 'bhutan.jpg' %}" height="215px" width="250px">
+                  </a>
+              </div>
+              </div>
+            </div>
+            <br>
+            <div class="col-md-6 mt-4">
+              <div class="hover-effect">
+              <div class="box-hover">
+                  <a href="" >
+                      <img src="{% static 'bhutan.jpg' %}" height="215px" width="250px" >
+                  </a>
+              </div>
+              </div>
+            </div>
+            <br>
+            <div class="col-md-6 mt-4">
+              <div class="hover-effect">
+              <div class="box-hover">
+                  <a href="" >
+                      <img src="{% static 'bhutan.jpg' %}" height="215px" width="250px">
+                  </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 hidden-sm">
+          <a href="" >
+              <img src="{% static '15.jpg' %}" width="520px" height="455px" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

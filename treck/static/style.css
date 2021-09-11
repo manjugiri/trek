@@ -1,0 +1,131 @@
+
+
+.single-service-two {
+    padding-top: 60px;
+    text-align: center;
+}
+
+div{
+    display: block;
+}
+
+h1{
+text-align: center;
+}
+
+.title-border:after {
+    background: transparent url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/title2-icon-1.png) no-repeat scroll 0 0;
+    bottom: 16px;
+    content: "";
+}
+
+.title-border:after {
+    background: transparent url(	https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/title-icon-2.png) no-repeat scroll 0 0;
+    bottom: 11px;
+    content: "";
+    height: 22px;
+    left: 50%;
+    margin-left: -34.5px;
+    position: absolute;
+    width: 67px;
+}
+
+.single-service-two ul li:before {
+    content: "";
+    width: 71px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+
+.single-service-two .menu-item a {
+    color: #ffae00; 
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .row .col-md-6{
+    background-image: url('7.png');
+    background-repeat: none;
+}
+
+.container .row .col-md-6 .welcomerpart{
+    background-image: url('7.png');
+    background-repeat: none;
+}
+
+
+.sightseeing:before {
+    background: url(sight-seeing-icon.png) no-repeat 0 0;
+}
+
+.cultural:before {
+    background: url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/culturel-study.png) no-repeat 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.riverrafting:before {
+    background: url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/rafting-icon.png) no-repeat 0 0;
+}
+
+.shoppingent:before {
+    background: url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/shopping-entertainment-icon.png) no-repeat 0 0;
+}
+
+.wildlifesafari:before {
+    background: url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/elephant-icon.png) no-repeat 0 0;
+}
+
+
+
+.adventureact:before {
+    background: url(https://www.discovertreks.com/wp-content/themes/discoverhimalayan/images/paragliding-icon.png) no-repeat 0 0;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.row{
+    display: flex;
+
+}
+.single-service-two {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.headsocial a .fa-facebook {
+    background-color:#43609c ;
+    color:#fff;
+
+}
+
+.headsocial a .fa {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+

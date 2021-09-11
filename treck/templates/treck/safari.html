@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>safari</title>
+  </head>
+  <body>
+<img class="img-fluid" src="https://www.discovertreks.com/wp-content/uploads/2017/09/elphant-safari-sauraha.jpg" style="width: 1300px; height: 500px;"  alt="Responsive image">
+<br>
+<br>
+<section class="container">
+    <article class="whitepart pagetop bg-light" style=" padding: 15px;
+    border: 1px solid #DDDFE1;  
+    border-top: 3px solid #2753ad;">
+        <h2 class="pagetitle">Wildlife Jungle Safari</h2>
+        <p>The tropical jungles of the Terai preserve some of the best wildlife habitat in the subcontinent. Nepal has 16 national parks, wildlife reserves and conservation areas, occupying 16 percent of its total geographical area. Jungle safaris on elephant back or jeep rides are offered at the Parsa Wildlife Reserve, Royal Bardia National Park, Royal Chitwan National Park and the Royal Shukla Phanta wildlife reserve, all located in the Terai. The Terai can be stiflingly hot during summer months and temperate during winters. Summer months require cool clothes, good walking shoes, shady hat and sunscreen. Other important items are mosquito repellant, anti-diarrhea tablets and anti-histamines. During monsoons one should carry waterproof jackets and an extra pair of shoes. The Terai jungles are infested with leeches during monsoons hence one should carry insect repellant to keep them away. Salt or a lighted cigarette will make them fall off. Pulling them off could infect the wound.</p>
+        <h4>When to Vist</h4>
+        <p>This park is situated under the tropical monsoon climate with a relatively high humidity. The cool winter season occurs from November to late February. In the summer season the thermometer rise upto 40 degree C. (mostly May -June -July). So the best time to visit the park is October -November in fall and mid February mid May in summer.</p>
+    </article>
+    <h1 class="text-center font-weight-light" style="color: black;"> Inside<span style="color:#2B59BC;"> Wildlife Jungel Safari</span></h1>
+    <hr>
+    <div class="container">
+      <div class="row">
+        {% for i in safari %}
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="{{i.image.url}}">
+              <p class="card-text"> {{ i.name }}</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+                    <a href="" class="btn btn-sm btn-outline-secondary mb-2 ml-2">View
+                        Detail</a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View Detail</button> -->
+              
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+</section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
